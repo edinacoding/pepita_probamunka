@@ -1,0 +1,19 @@
+@mixin flex($direction, $wrap, $justify_content) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $justify_content;
+}
+
+@mixin font18() {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@mixin font12() {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}

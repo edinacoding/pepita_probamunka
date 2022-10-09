@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mixins.css" />
+    <script src="scripts.js"></script>
+    <title>Tickets - The Art Museum</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">The Art Museum</div>
+        <div class="page_title">Plan Your Visit</div>
+        <div class="nav_desktop">
+                <a href="#">Exhibitions & Events</a><br>
+                <a href="#">Artists & Artworks</a><br>
+                <a href="collections.html">Collections</a> <br>
+                <a href="tickets.html">Plan Your Visit</a><br>
+                <a href="#">Become a Member</a><br>
+                <a href="#">Shop</a>
+        </div>
+        
+        <div id="menu" onclick="toggleNav()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div id="mySidenav" class="sidenav hidden">
+          <div class="sidenav_menu">
+            <div class="menu_search">
+              <div class="submit">
+                <button type="submit">
+                  <img src="images/search_icon_menu.svg" alt="" />
+                </button>
+              </div>
+              <div class="menu_search_input">
+                <input type="text" placeholder="Search" />
+              </div>
+            </div>
+            <nav>
+              <div class="nav_link">
+                <div class="nav_img">
+                    <img src="images/menu/nav_events.svg" alt="" />
+                </div>
+                <div class="nav_text">
+                    <a href="#">Exhibitions & Events</a>
+                </div>
+              </div>
+              <div class="nav_link">
+                <div class="nav_img">
+                    <img src="images/menu/nav_artists.svg" alt="" />
+                </div>
+                <div class="nav_text">
+                    <a href="#"><a href="#">Artists & Artworks</a></a>
+                </div>
+              </div>
+              <div class="nav_link">
+                <div class="nav_img">
+                    <img src="images/menu/nav_collections.svg" alt="" />
+                </div>
+                <div class="nav_text">
+                    <a href="collections.html">Collections</a>
+                </div>
+              </div>
+              <div class="nav_link">
+                <div class="nav_img">
+                    <img src="images/menu/nav_tickets.svg" alt="" />
+                </div>
+                <div class="nav_text">
+                    <a href="tickets.html">Plan Your Visit</a>
+                </div>
+              </div>
+              <div class="nav_link">
+                <div class="nav_img">
+                    <img src="images/menu/nav_membership.svg" alt="" />
+                </div>
+                <div class="nav_text">
+                    <a href="#">Become a Member</a>
+                </div>
+              </div>
+              <div class="nav_link">
+                <div class="nav_img">
+                    <img src="images/menu/nav_shop.svg" alt="" />
+                </div>
+                <div class="nav_text">
+                    <a href="#">Shop</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="page_title_desktop">Plan Your Visit</div>
+        <div class="info_tickets">Skip the Line. <br>
+          Purchase Tickets.</div>
+        <div class="info_details">
+          All exhibitions, audio tours, and films included in the price of
+          admission.
+        </div>
+        <div class="sale">
+          <div class="tabs">
+            <div class="tab left">Today</div>
+            <div class="tab tomorrow">Tomorrow</div>
+            <div class="tab right">Other</div>
+          </div>
+          <div class="open">
+            March 22, 2016 <br />
+            Open 10:30am-5:30pm
+          </div>
+          <div class="tickets">
+            <div class="ticket">
+              <div class="ticket_text">Adults</div>
+              <div class="ticket_select">
+                <div class="sign">-</div>
+                <div class="number black">2</div>
+                <div class="sign">+</div>
+              </div>
+            </div>
+            <div class="ticket">
+              <div class="ticket_text">
+                Seniors <br />
+                <div class="with_id">65+ with ID</div>
+              </div>
+              <div class="ticket_select">
+                <div class="sign">-</div>
+                <div class="number">0</div>
+                <div class="sign">+</div>
+              </div>
+            </div>
+            <div class="ticket">
+              <div class="ticket_text">
+                Students
+                <div class="with_id">with ID</div>
+              </div>
+              <div class="ticket_select">
+                <div class="sign">-</div>
+                <div class="number">0</div>
+                <div class="sign">+</div>
+              </div>
+            </div>
+          </div>
+          <div class="total_price">
+            <div class="total">Total</div>
+            <div class="price">$16</div>
+          </div>
+          <div class="payment">Continue to Payment</div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,534 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
+  color: #ff473a;
+  font: 100% Montserrat, sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  margin: 15px;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #000;
+  max-width: 10%;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: bold;
+}
+
+.page_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.line {
+  width: 18px;
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+/*** Collections page ***/
+.search_area {
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #ff473a;
+  height: 48px;
+  margin: 25px 0 5px;
+  color: #ff473a;
+}
+
+.search_input input {
+  margin: 0 0 0 5px;
+  border: 0px;
+  outline: none;
+  font-size: 20px;
+  color: #ff473a;
+  font-size: 18px;
+}
+
+.search_input input::-moz-placeholder {
+  color: #ff473a;
+}
+
+.search_input input:-ms-input-placeholder {
+  color: #ff473a;
+}
+
+.search_input input::placeholder {
+  color: #ff473a;
+}
+
+button {
+  border: 0;
+  background-color: #fff;
+}
+
+.advanced_search {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.collection_items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.collection_item {
+  width: 47.5%;
+  margin: 14px 0 0;
+}
+
+.collection_item img {
+  width: 100%;
+}
+
+.collection_item p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  height: 25px;
+}
+
+/*** Tickets page ***/
+.info_tickets {
+  margin: 25px 0 5px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #000;
+  max-width: 70%;
+}
+
+.info_details {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff473a;
+  max-width: 70%;
+}
+
+.tabs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: none;
+  width: 100%;
+  height: 40px;
+  margin: 5px 0 0;
+}
+
+.tab {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  width: 33.3%;
+  color: #d4d4d4;
+  padding: 10px 20px 0;
+  border-bottom: 2px solid #f4f5f2;
+}
+
+.left {
+  justify-content: left;
+}
+
+.right {
+  justify-content: right;
+}
+
+.tomorrow {
+  color: #000;
+  border-bottom: 3px solid #ff473a;
+  align-items: flex-start;
+}
+
+.open {
+  display: flex;
+  flex-flow: none none;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 5px 0 0;
+  color: #000;
+  text-align: center;
+}
+
+.tickets {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0 20px 0;
+  margin: 55px 0 0;
+  color: #000;
+}
+
+.ticket {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: none;
+  margin: 0 0 30px;
+  width: 100%;
+  height: 30px;
+}
+
+.ticket_text {
+  width: 80%;
+}
+
+.ticket_select {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.number {
+  margin: 0 9px;
+  color: #d4d4d4;
+}
+
+.black {
+  color: #000;
+}
+
+.sign {
+  display: flex;
+  flex-flow: none none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  height: 18px;
+  width: 18px;
+  font-size: 14px;
+  color: #d4d4d4;
+  border: 1px solid #d4d4d4;
+}
+
+.with_id {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #d4d4d4;
+}
+
+.total_price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  border-top: 3px solid #ff473a;
+  color: #000;
+  margin: 30px 0;
+  padding: 5px 20px 0;
+}
+
+.total,
+.price {
+  width: 20%;
+}
+
+.price {
+  text-align: center;
+}
+
+.payment {
+  display: flex;
+  flex-flow: none none;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0 auto;
+  background-color: #ff473a;
+  color: #fff;
+  width: 70%;
+  height: 42px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*** Off Canvas menu ***/
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.sidenav {
+  height: 100%;
+  width: 310px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ff473a;
+  padding-top: 25px;
+  transition: 0.5s;
+  box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sidenav_menu {
+  margin: 0 25px 0 15px;
+}
+
+.menu_search {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 42px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.submit {
+  justify-content: flex-start;
+  width: 10%;
+}
+
+.menu_search button {
+  border: 0;
+  background-color: #ff473a;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_search_input {
+  justify-content: flex-end;
+  width: 90%;
+  padding: 0 0 0 10px;
+}
+
+.menu_search_input input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  padding: 5px 0 5px 10px;
+  height: 42px;
+  outline: none;
+  color: #fff;
+  background-color: #ff473a;
+  border: 2px solid #fcfcfc;
+  width: 100%;
+}
+
+.menu_search_input input::-moz-placeholder {
+  color: #fff;
+  background-color: #ff473a;
+}
+
+.menu_search_input input:-ms-input-placeholder {
+  color: #fff;
+  background-color: #ff473a;
+}
+
+.menu_search_input input::placeholder {
+  color: #fff;
+  background-color: #ff473a;
+}
+
+nav {
+  margin: 20px 0 0;
+}
+
+.nav_link {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_link,
+.nav_link a,
+.nav_link a:hover {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav_img {
+  width: 10%;
+}
+
+.nav_text {
+  margin: 0 0 0 10px;
+  text-align: left;
+  width: 83%;
+  align-self: center;
+}
+
+.nav_desktop {
+  display: none;
+}
+
+.page_title_desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  header {
+    width: 35%;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #menu,
+.page_title {
+    display: none;
+  }
+  .title {
+    max-width: 5%;
+    font-size: 14px;
+    text-align: left;
+  }
+  .nav_desktop {
+    display: block;
+    text-align: left;
+    margin: 10px 0 0;
+  }
+  .nav_desktop a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 25px;
+    color: #ff473a;
+  }
+  .nav_desktop a:hover {
+    color: #000;
+  }
+  main {
+    width: 65%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .search {
+    margin: 0 0 5px;
+  }
+  .page_title_desktop {
+    max-width: 100%;
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 0 30px;
+    padding: 0;
+  }
+  .info_tickets {
+    margin: 0 0 15px;
+    color: #000;
+    text-align: left;
+    max-width: 100%;
+  }
+  .info_details {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ff473a;
+    text-align: left;
+    max-width: 100%;
+    margin: 0;
+  }
+  .sale {
+    margin: 20px auto 0;
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .nav_desktop a {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .collection_items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .collection_item {
+    width: 32%;
+  }
+  .sale {
+    margin: 20px auto 0;
+    width: 85%;
+  }
+}
+@media (min-width: 1200px) {
+  .sale {
+    width: 70%;
+  }
+}/*# sourceMappingURL=styles.css.map */
